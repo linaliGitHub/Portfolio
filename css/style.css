@@ -1,0 +1,10 @@
+body {
+  font-family: 'Inter', sans-serif;
+}
+.name {
+  font-size: 28px;
+}
+.title-h1 {
+  font-size: 74px;
+  text-transform: uppercase;
+}
