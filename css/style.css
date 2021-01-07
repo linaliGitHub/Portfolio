@@ -436,4 +436,113 @@ position: relative;
   line-height: 150%;
   opacity: 0.8;
 }
-
+.tech {
+  display: grid;
+  grid-template: 148px 148px/repeat(4, 1fr);
+}
+.tech-item {
+  border-bottom: 1px solid rgba(243, 242, 240, 0.3);
+  border-right: 1px solid rgba(243, 242, 240, 0.3);
+  display: flex;
+  justify-content: center;
+}
+.html, .css, .js, .jquery {
+  border-top: 1px solid rgba(243, 242, 240, 0.3);
+}
+.tech-image {
+  filter: grayscale(100%);
+  transition: 0.2s ease;
+}
+.tech-item:hover .tech-image {
+  filter: grayscale(0);
+}
+.tech-item:first-child,
+.tech-item:nth-child(5) {
+  border-left: 1px solid rgba(243, 242, 240, 0.3);
+}
+.ui-tooltip {
+  background-color: #E31B1B;
+  border-color: #E31B1B!important;
+  border-radius: 0;
+  text-align: center;
+  box-shadow: none!important;
+  font-style: 10px;
+  color: rgba(243,242,240,0.8);
+  max-width: 232px;
+  line-height: 150%;
+  padding: 20px;
+  box-sizing: border-box;
+}
+.ui-tooltip-content::before {
+  content: "";
+  position: absolute;
+  display: block;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  top: -20px;
+  width: 2px;
+  border: 10px solid transparent;
+  border-bottom: 10px solid #E31B1B;
+}
+.tarif {
+  display: grid;
+  grid-template: repeat(4, 1fr)/1fr 1fr;
+}
+.tarif-item {
+  border-bottom: 1px solid #F3F2F0;
+}
+.tarif-title {
+  font-size: 28px;
+  line-height: 150%;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+.tarif-description {
+  font-size: 28px;
+  line-height: 150%;
+  opacity: 0.8;
+}
+.tarif-name {
+  font-size: 28px;
+  line-height: 150%;
+}
+.tarif-text {
+  font-size: 16px;
+  line-height: 150%;
+  opacity: 0.8;
+}
+.tarif .project {
+  display: inline-flex;
+}
+.tarif-pack {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 150%;
+}
+.tarif-list {
+  list-style-type: none;
+  padding-left: 0;
+  margin: 0;
+}
+.tarif-list-item {
+  position: relative;
+  padding-left: 30px;
+  margin-bottom: 10px;
+}
+.tarif-list-item:before {
+  content: "";
+  display: block;
+  width: 4px;
+  height: 4px;
+  background-color: #F3F2F0;
+  border-radius: 50%;
+  position: absolute;
+  left: 0;
+  top: calc(50% - 2px);
+}
+.tarif-price {
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 150%;
+}
