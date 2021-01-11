@@ -592,3 +592,44 @@ position: relative;
   z-index: 1;
   margin: 0;
 }
+.form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.form-title {
+  font-size: 28px;
+  line-height: 150%;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  border-bottom: 1px solid #F3F2F0;
+}
+.form-description {
+  font-size: 28px;
+  line-height: 150%;
+  opacity: 0.8;
+  border-bottom: 1px solid #F3F2F0;
+  padding-bottom: 51px;
+}
+form {
+  font-size: 12px;
+  line-height: 150%;
+}
+form label {
+  opacity: 0.8;
+}
+form input {
+  width: 100%;
+  padding: 24px 20px 23px;
+  background-color: rgba(24, 20, 13, 0.1);
+  border: none;
+  box-sizing: border-box;
+}
+form select {
+  width: 100%;
+}
+.ui-selectmenu-button.ui-button {
+  width: 100%;
+  background-color: rgba(24, 20, 13, 0.1);
+  padding: 24px 20px 23px;
+  color: #fff;
+}
