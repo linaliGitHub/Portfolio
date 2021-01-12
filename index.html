@@ -452,12 +452,18 @@
         <section class="section-form">
           <div class="form">
             <div class="form-title">
+              <svg class="circle circle-form" viewBox="0 0 253 253" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="126.5" cy="126.5" r="126.5"/>
+              </svg>            
+              <svg class="triangle-form" width="66" height="72" viewBox="0 0 66 72" xmlns="http://www.w3.org/2000/svg">
+                <path d="M33 0L65.909 71.25H0.0910339L33 0Z"/>
+              </svg>
               <p>Расскажите<br>о своем проекте</p>
             </div>
             <div class="form-description">
               <p>Воспользуйтесь формой обратной связи, чтобы обсудить ваш проект, заполните все поля, и я свяжусь с&nbsp;вами в ближайшее время</p>
             </div>
-            <div class="form-item">
+            <div class="form-item form-social">
               <ul class="nav nav-social">
                 <li class="nav-item"><a class="nav-link" href="#" target="_blank">Vk</a></li>
                 <li class="nav-item"><a class="nav-link" href="#" target="_blank">Instagram</a></li>
@@ -468,15 +474,15 @@
               <form>
                 <label>Телефон или почта</label>
                 <input type="text" placeholder="Введите телефон">
-                  <label for="communicate">Выберите удобный способ связи</label>
-                  <select name="communicate" id="communicate">
-                    <option>Telegram</option>
-                    <option>WhatsApp</option>
-                    <option>Viber</option>
-                    <option>Звонок на телефон</option>
-                    <option>SMS сообщение</option>
-                  </select>
-                  <input type="submit" value="Отправить">                
+                <label for="communicate">Выберите удобный способ связи</label>
+                <select name="communicate" id="communicate">
+                  <option>Telegram</option>
+                  <option>WhatsApp</option>
+                  <option>Viber</option>
+                  <option>Звонок на телефон</option>
+                  <option>SMS сообщение</option>
+                </select>
+                <input type="submit" value="Отправить">                
               </form>
             </div>
           </div>
@@ -497,7 +503,7 @@
           </div>
           <div class="footer-bottom">
             <p>&copy;2020, Все права защищены</p>
-            <p>Сделано в рамках курса учебной платформы <a href="">Frontend Blok</a></p>
+            <p>Сделано в рамках курса учебной платформы <a class="footer-link" href="">Frontend Blok</a></p>
           </div>
         </footer>
       </div>
@@ -508,7 +514,7 @@
       $( function() {
         $( "#tabs" ).tabs({ active: 0});
         $( document ).tooltip();
-        $( "communicate" ).selectmenu();
+        $( "#communicate" ).selectmenu();
       } );
       $( ".tech-image" ).tooltip({
         position: {
