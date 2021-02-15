@@ -101,6 +101,29 @@ body {
 .dark .form-item {
   border-top: 1px solid #F3F2F0;
 }
+.dark #dark,
+.dark #light {
+  background-color: #232326;
+  color: #E7E6E4;
+}
+.dark #dark:focus,
+.dark #light:focus {
+  outline: none;
+}
+.dark .burger-img {
+  fill:#E7E6E6;
+}
+.dark form select {
+  background-color: #38383A;
+  color: #F3F2F0;
+}
+.light form select {
+  background-color: #E7E6E4;
+  color: #38383A;
+}
+.light .burger-img {
+  fill:#010101;
+}
 .light .form-item {
   border-top: 1px solid #010101;
 }
@@ -823,6 +846,15 @@ form input[type=submit]:hover {
 }
 form select {
   width: 100%;
+  margin-bottom: 30px;
+  padding: 26px 20px 26px;
+  opacity: 0.8;
+}
+form select:focus {
+  outline: none;
+}
+form select option {
+  width: 500px;
 }
 .form-item .nav-item:first-child {
   padding-left: 0;
@@ -899,14 +931,66 @@ footer {
   top: 52px;
   left: -176px;
 }
+.theme-btn {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 30px;
+}
 @media (min-width: 901px) {
   .header-mobile {
     display: none;
   }
 }
+.burger-open {
+  display: none;
+}
+
+
+
+
 @media (max-width: 900px) {
+  body.lock {
+    overflow: hidden;
+  }
   header {
     display: none;
+  }
+  .burger-open {
+    display: block;
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #232326;
+    z-index: 10;
+  }
+  .burger-open {
+    padding-top: 100px;
+    display: none;
+  }
+  .active {
+    display: block;
+  }
+  .menu {
+    outline: none;
+  }
+  .burger-open-nav {
+    list-style-type: none;
+    padding-left: 0;
+    margin: 0;
+  }
+  .burger-open-nav-item {
+    padding-left: 14px;
+    padding-right: 14px;
+    text-align: center;
+    border-top: 1px solid rgba(243, 242, 240, 0.2);
+    padding: 20px;
+  }
+  .burger-open-nav-link {
+    text-decoration: none;
+    font-size: 26px;
+    line-height: 150%;
+    color: #F3F2F0;
   }
   .header-mobile {
     display: flex;
@@ -914,6 +998,8 @@ footer {
     align-items: center;
     padding-top: 30px;
     padding-bottom: 30px;
+    position: relative;
+    z-index: 12;
   }
   .circle-main {
     width: 200px;
@@ -1393,5 +1479,4 @@ footer {
   .nav-tabs {
     justify-content: space-between;
   }
-  
 }
