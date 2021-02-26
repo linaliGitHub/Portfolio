@@ -3,4 +3,5 @@ document.querySelector('#light').onclick = function (){document.querySelector('#
 document.querySelector('#opener').onclick = function (){
   document.querySelector('.burger-open').classList.toggle('active');
   document.querySelector('body').classList.toggle('lock');
+  document.querySelector('.menu-btn').classList.toggle('active');
 };

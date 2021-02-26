@@ -30,12 +30,8 @@
         </header>
         <div class="header-mobile">
           <a class="nav-link" href="tel:+79237777777">8 923 777-77-77</a>
-          <button id="opener" class="menu">
-            <svg class="burger-img" width="26" height="20" viewBox="0 0 26 20" xmlns="http://www.w3.org/2000/svg">
-              <rect width="26" height="2"/>
-              <rect y="9" width="26" height="2"/>
-              <rect y="18" width="26" height="2"/>
-              </svg>
+          <button button class="menu-btn" id="opener">
+            <span class="menu-btn__item"></span>
           </button>
 
         </div>
@@ -539,6 +535,9 @@
     <script src="script/jquery-ui.min.js"></script>
     <script src="script/script.js"></script>
     <script>
-    </script>
+      $( function() {
+        $( document ).tooltip();
+      } );
+      </script>
   </body>
 </html>
